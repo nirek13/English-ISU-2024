@@ -1,0 +1,170 @@
+:root {
+  --code-window-color: #252525;
+  --code-text-color: white;
+  --code-language-color: white;
+  --code-filename-color: #cbcbcb;
+  --code-languagebar-color: #3d3943;
+  --code-key-color: #78a8c0;
+  --code-function-color: #fed99e;
+  --code-value-color: #73b69e;
+  --code-selected-color: #514d56;
+}
+
+[anthonytedja-data-theme="light"] {
+  --code-window-color: #f8f8f8;
+  --code-text-color: #3a3a3a;
+  --code-language-color: #3a3a3a;
+  --code-filename-color: #3a3a3a;
+  --code-languagebar-color: #eeeeee;
+  --code-key-color: #57864d;
+  --code-function-color: #cc4f77;
+  --code-value-color: #3374bd;
+  --code-selected-color: #dbdbdb;
+}
+
+.code-window {
+  flex-grow: 1;
+  /*background-color: #000000d9;*/
+  background-color: var(--code-window-color);
+  border-radius: 0.75em;
+  color: var(--code-language-color);
+  padding: 1em;
+  box-shadow: 0 0 2em #0000004d;
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  transition: all ease 0.2s;
+}
+
+.code-header {
+  display: flex;
+  margin: -1em -1em 0.5em;
+  padding: 0.75em 1em;
+  font-weight: 300;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--code-filename-color);
+  transition: all ease 0.2s;
+}
+
+.code-close-button {
+  background-color: #ff5f57;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  margin-right: 0.5em;
+}
+
+.code-minimize-button {
+  background-color: #febc2e;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  margin-right: 0.5em;
+}
+
+.code-expand-button {
+  background-color: #5bc553;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 1em;
+  margin-right: 0.5em;
+}
+
+.code-filename {
+  font-size: 14px;
+  justify-self: center;
+  margin: 0 auto;
+  padding-right: 2.4rem;
+}
+
+.code-container {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.code-block {
+  display: block;
+  white-space: pre;
+  font-size: .9rem;
+  overflow: auto;
+  background-color: transparent;
+  line-height: 1.25;
+  padding: 0.1em 0.2em;
+  border-radius: 0.25em;
+  color: var(--code-text-color);
+  padding-bottom: 1rem;
+  transition: all ease 0.2s;
+}
+
+.code-footer {
+  padding: 0;
+  border-radius: 0 0 0.5em 0.5em;
+  background-color: var(--code-languagebar-color);
+  margin: 1em -1em -1em;
+  overflow: hidden;
+  transition: all ease 0.2s;
+}
+
+.code-languages {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.code-languages li {
+  display: flex;
+  align-items: center;
+  font-size: .75em;
+  padding: 0.75em 1em;
+  cursor: pointer;
+  margin-bottom: 0;
+  color: var(--code-language-color);
+  background-color: transparent;
+  transition: all ease 0.2s;
+  cursor: url("../../assets/img/cursor/pointer.svg"), auto !important;
+}
+
+@media (hover: hover) {
+  .code-languages li:hover > * {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.code-languages li[data-selected] {
+  background-color: var(--code-selected-color);
+  transition: all ease 0.2s !important;
+}
+
+.code-languages svg, .code-languages i {
+  display: block;
+  width: 0.9em;
+  /*margin-right: 0.5em;*/
+  font-size: 1.4rem;
+  max-height: 1em;
+}
+
+.code-json-k {
+  color: var(--code-key-color);
+  transition: all ease 0.2s;
+}
+
+.code-json-v {
+  color: var(--code-value-color);
+  transition: all ease 0.2s;
+}
+
+.code-json-f {
+  color: var(--code-function-color);
+  transition: all ease 0.2s;
+}
+
+#codeblock-icon-js {
+  border-bottom-left-radius: 0.5em;
+}
+
