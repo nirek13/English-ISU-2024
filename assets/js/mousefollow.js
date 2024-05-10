@@ -16,9 +16,7 @@ if (!isTouchDevice && frontpage && fullname) {
 	}, thread;
 
 	let transform = function (xRot, yRot) {
-		fullname.animate({
-			transform: `rotateX(${yRot * 0.4}deg) rotateY(${xRot * 0.4}deg)`,
-			filter: `drop-shadow(clamp(-8px, ${yRot * -0.5}px, 8px) clamp(-8px, ${xRot * 0.5}px, 8px) 0px var(--name-shadow))`
-		}, { duration: 250, fill: "forwards" });
+		fullname.style.transform = `perspective(1000px) rotateX(${yRot * 0.4}deg) rotateY(${xRot * 0.4}deg)`;
+		fullname.style.filter = `drop-shadow(clamp(-8px, ${yRot * -0.5}px, 8px) clamp(-8px, ${xRot * 0.5}px, 8px) 0px var(--name-shadow))`;
 	}
 }

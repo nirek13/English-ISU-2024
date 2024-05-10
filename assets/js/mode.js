@@ -3,6 +3,7 @@
 localStorage.getItem('anthonytedja-data-theme') === 'light' ? light() : dark();
 
 document.querySelector('#logo').addEventListener('click', function () {
+	console.log("clicked")
 	document.documentElement.getAttribute('anthonytedja-data-theme') === 'light' ? dark() : light();
 });
 

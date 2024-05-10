@@ -38,15 +38,15 @@ $('#codeblock-icon-email').click(function () {
 });
 
 $('#codeblock-icon-github').click(function () {
-	window.location.href = "https://github.com/anthonytedja";
+	window.location.href = "https://github.com/nirek13";
 });
 
 $('#codeblock-icon-linkedin').click(function () {
-	window.location.href = "https://www.linkedin.com/in/anthonytedja";
+	window.location.href = "https://www.linkedin.com/in/nirek-shetty-a9a7322b5/";
 });
 
 $('#codeblock-icon-devpost').click(function () {
-	window.location.href = "https://devpost.com/anthonytedja";
+	window.location.href = "https://devpost.com/nirekshetty";
 });
 
 $('#codeblock-icon-unsplash').click(function () {

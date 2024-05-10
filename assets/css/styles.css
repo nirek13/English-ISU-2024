@@ -9,7 +9,7 @@
   --bg-shade: soft-light;
   --link-color: #70a1ff;
   --logo-filter: invert(80%);
-  --logo-transform: rotate(180deg);
+  --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #333333;
   --name-hover: #f76c6c;
@@ -51,6 +51,60 @@
   --hello-img-filter: invert(15%);
   --click-img-filter: none;
 }
+/* Theme 2 */
+[data-theme="theme2"] {
+  --main-bg-color: #242424;
+  --second-bg-color: #333333;
+  --heading-color: #ff9800;
+  --main-text-color: #f5f5f5;
+  --selection-color: #4d4d4d;
+  --scroll-color: #ff9800;
+  --arrow-color: #00bcd4;
+  --bg-shade: soft-light;
+  --link-color: #00bcd4;
+  --logo-filter: invert(80%);
+  --logo-transform: rotate(0deg);
+  --logo-transform-hover: rotate(200deg) scale(1.2);
+  --border-color: #333333;
+  --name-hover: #ff9800;
+  --name-shadow: #616161;
+  --border-outline: #ff9800;
+  --toast-bg: rgba(36, 36, 36, 0.95);
+  --toast-border: rgba(255, 255, 255, 0.1);
+  --toast-border2: rgba(255, 255, 255, 0.05);
+  --toast-close: invert(100%);
+  --navbar-box: rgba(255, 255, 255, 0.03);
+  --hello-img-filter: invert(80%);
+  --click-img-filter: invert(90%);
+}
+
+/* Theme 3 */
+[data-theme="theme3"] {
+  --main-bg-color: #0f0f17;
+  --second-bg-color: #1a1a26;
+  --heading-color: #f50057;
+  --main-text-color: #e0e0e0;
+  --selection-color: #29293d;
+  --scroll-color: #f50057;
+  --arrow-color: #e0e0e0;
+  --bg-shade: soft-light;
+  --link-color: #e0e0e0;
+  --logo-filter: invert(80%);
+  --logo-transform: rotate(0deg);
+  --logo-transform-hover: rotate(200deg) scale(1.2);
+  --border-color: #1a1a26;
+  --name-hover: #f50057;
+  --name-shadow: #757575;
+  --border-outline: #f50057;
+  --toast-bg: rgba(15, 15, 23, 0.95);
+  --toast-border: rgba(255, 255, 255, 0.1);
+  --toast-border2: rgba(255, 255, 255, 0.05);
+  --toast-close: invert(100%);
+  --navbar-box: rgba(255, 255, 255, 0.03);
+  --hello-img-filter: invert(80%);
+  --click-img-filter: invert(90%);
+}
+
 
 html, body {
   /*scroll-snap-type: y mandatory;*/
@@ -158,11 +212,11 @@ section:nth-last-of-type(odd) {
   position: absolute;
   left: 0;
   transform: var(--logo-transform);
-  max-height: 10rem;
+  max-height: 5rem;
   filter: var(--logo-filter);
   transition: all ease 0.5s;
   margin: 1px;
-  padding: 10px;
+  padding: 5px;
 }
 
 @media (hover: hover) {
@@ -615,4 +669,24 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .navbar-brand.links {
   margin-left: 3px; /* Adjust as needed */
+}
+
+/* Rest of your CSS rules */
+
+
+
+/* Additional CSS rules for specific themes */
+[data-theme="theme1"] {
+  --logo-filter: invert(80%); /* Adjust the filter effect for theme1 */
+  --logo-color: #ff6b6b; /* Set the logo color for theme1 */
+}
+
+[data-theme="theme2"] {
+  --logo-filter: invert(20%); /* Adjust the filter effect for theme2 */
+  --logo-color: #ff9800; /* Set the logo color for theme2 */
+}
+
+[data-theme="theme3"] {
+  --logo-filter: invert(90%); /* Adjust the filter effect for theme3 */
+  --logo-color: #f50057; /* Set the logo color for theme3 */
 }
