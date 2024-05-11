@@ -105,6 +105,61 @@
   --click-img-filter: invert(90%);
 }
 
+/* Theme 4 */
+[data-theme="theme4"] {
+  --main-bg-color: #222831;
+  --second-bg-color: #393e46;
+  --heading-color: #ff5722;
+  --main-text-color: #eeeeee;
+  --selection-color: #2f2f2f;
+  --scroll-color: #ff5722;
+  --arrow-color: #64ffda;
+  --bg-shade: soft-light;
+  --link-color: #64ffda;
+  --logo-filter: invert(80%);
+  --logo-transform: rotate(0deg);
+  --logo-transform-hover: rotate(200deg) scale(1.2);
+  --border-color: #393e46;
+  --name-hover: #ff5722;
+  --name-shadow: #757575;
+  --border-outline: #ff5722;
+  --toast-bg: rgba(34, 34, 49, 0.95);
+  --toast-border: rgba(255, 255, 255, 0.1);
+  --toast-border2: rgba(255, 255, 255, 0.05);
+  --toast-close: invert(100%);
+  --navbar-box: rgba(255, 255, 255, 0.03);
+  --hello-img-filter: invert(80%);
+  --click-img-filter: invert(90%);
+}
+
+/* Theme 5 */
+[data-theme="theme5"] {
+  --main-bg-color: #0a192f;
+  --second-bg-color: #172a45;
+  --heading-color: #fca311;
+  --main-text-color: #eaeaea;
+  --selection-color: #1a3553;
+  --scroll-color: #fca311;
+  --arrow-color: #ff3838;
+  --bg-shade: soft-light;
+  --link-color: #ff3838;
+  --logo-filter: invert(80%);
+  --logo-transform: rotate(0deg);
+  --logo-transform-hover: rotate(200deg) scale(1.2);
+  --border-color: #172a45;
+  --name-hover: #fca311;
+  --name-shadow: #616161;
+  --border-outline: #fca311;
+  --toast-bg: rgba(10, 25, 47, 0.95);
+  --toast-border: rgba(255, 255, 255, 0.1);
+  --toast-border2: rgba(255, 255, 255, 0.05);
+  --toast-close: invert(100%);
+  --navbar-box: rgba(255, 255, 255, 0.03);
+  --hello-img-filter: invert(80%);
+  --click-img-filter: invert(90%);
+}
+
+
 
 html, body {
   /*scroll-snap-type: y mandatory;*/
