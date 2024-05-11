@@ -209,7 +209,7 @@ section:nth-last-of-type(odd) {
 }
 
 #logo {
-  position: absolute;
+  position: relative;
   left: 0;
   transform: var(--logo-transform);
   max-height: 5rem;
@@ -306,18 +306,20 @@ section:nth-last-of-type(odd) {
 }
 
 .navbar-brand {
-  margin-left: 0;
+  margin-left: 3px;
   margin-right: 0;
   font-weight: 600;
   color: var(--main-text-color) !important;
   transition: all ease 0.2s;
-  padding: 0 6rem;
+  padding: 0rem;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .navbar-brand {
-    margin-left: 9rem;
-    margin-right: 1rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-right: 0rem;
   }
 }
 
@@ -689,4 +691,27 @@ input[type="number"]::-webkit-outer-spin-button {
 [data-theme="theme3"] {
   --logo-filter: invert(90%); /* Adjust the filter effect for theme3 */
   --logo-color: #f50057; /* Set the logo color for theme3 */
+}
+/* Your existing CSS rules */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
