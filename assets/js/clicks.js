@@ -54,5 +54,5 @@ $('#codeblock-icon-unsplash').click(function () {
 });
 
 $('#codeblock-icon-instagram').click(function () {
-	window.location.href = "https://www.instagram.com/anthonytedja";
+	window.location.href = "";
 });
