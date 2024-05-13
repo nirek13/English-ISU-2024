@@ -716,7 +716,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 .chat-container{
-  background-color: #272727;
+  background-color: var(--second-bg-color);
 }
 
 .navbar-brand-container {
