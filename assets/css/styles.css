@@ -652,7 +652,7 @@ footer {
   padding: 5px;
 }
 
-.button {
+.button:not(.like-button) {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -769,4 +769,37 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+
+.like-button:hover {
+  background-color: transparent;
+}
+
+/* Optional: Adjust spacing and alignment */
+
+
+.like-button {
+  position: relative;
+  bottom: 40px; /* Adjust as needed */
+  right: 100px; /* Adjust as needed */
+
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+
+
+.like-button img {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#likeCount{
+  text-decoration-color: var(--main-text-color);
+  position:fixed;
+}
+.likeys{
+  text-decoration-color: white;
+  position:relative;
 }

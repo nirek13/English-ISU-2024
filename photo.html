@@ -78,57 +78,7 @@
   </div>
 </section>
 
-<style>
-  /* Style for the gallery container */
-  #gallery-images {
-    margin-top: 20px; /* Adjust margin as needed */
-  }
 
-  /* Style for the individual image items */
-  .gallery-item {
-    padding: 10px; /* Adjust padding as needed */
-  }
-
-  /* Style for the images */
-  .gallery-item img {
-    width: 100%; /* Ensure images fill their container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Add rounded corners */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-    transition: transform 0.3s ease; /* Add transition effect */
-  }
-
-  /* Hover effect on images */
-  .gallery-item img:hover {
-    transform: scale(1.05); /* Scale up slightly on hover */
-  }
-</style>
-
-<script>
-  // Function to create image elements dynamically
-  function createPhotoGallery() {
-    const galleryContainer = document.getElementById('gallery-images');
-
-    // List of image filenames
-    const imageFilenames = ['image1.jpg', 'image.png' , '1.png' , 'Nirek.png'] ; // Add more filenames as needed
-
-    // Loop through the image filenames and create HTML elements
-    imageFilenames.forEach(filename => {
-      const imageElement = document.createElement('div');
-      imageElement.classList.add('col-md-4', 'gallery-item'); // Adjust column size as needed and add gallery-item class
-
-      const img = document.createElement('img');
-      img.src = `assets/photogallery/${filename}`;
-      img.alt = filename; // Set alt text to image filename
-
-      imageElement.appendChild(img);
-      galleryContainer.appendChild(imageElement);
-    });
-  }
-
-  // Call the function to create the photo gallery when the page loads
-  window.addEventListener('DOMContentLoaded', createPhotoGallery);
-</script>
 
 <nav class="navbar navbar-expand-md fixed-top navbar-light" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200" data-aos-once="true">
   <div class="container">
@@ -152,8 +102,21 @@
     </div>
   </div>
 </nav>
+<header class="d-flex content-section p-0" style="background-image: url(&quot;assets/img/float.svg&quot;);background-size: cover;">
+  <div>
+    <div class="container text-block" id="frontpage-content">
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="text-start mb-0 fw-semibold">ooops 404</p>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+        <h1 id="fullname" class="noselect"><span class="name"><span>C</span><span>o</span><span>m</span></span><span class="name"><span>i</span><span>n</span><span>g</span><span>&nbsp;</span><span>s</span><span>o</span><span>o</span><span>n</span></span></h1>
+      </div>
+      <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="text-start mt-3 fw-semibold">don't wake up the cat...</h2>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" class="text-start mt-3 fw-semibold">lets go back <a href="https://nirekshetty.tech">home</a>.</p>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1000" data-aos-once="true" class="noselect"><img class="img-fluid links" id="cat" src="assets/img/cat.gif" style="width: clamp(10rem, 35vw, 15rem);margin-top: -1em;" alt="animated cat"></div>
+    </div>
+  </div>
+</header>
 <footer>
-  <div class="container p-2 p-sm-3 p-lg-4"><a class="footer-body links small noselect" href="https://github.com/nirek13/me">Designed &amp; Built by Nirek Shetty<br><i class="fa fa-star-o me-2"></i><span id="github-stars">0</span><i class="fa fa-github-alt mx-3"></i><i class="fa fa-code-fork me-2"></i><span id="github-forks">0</span></a></div><a class="scroll-to-top links hidden" href="#page-top"><i class="fa fa-angle-up"></i></a>
+  <div class="container p-2 p-sm-3 p-lg-4"><a class="footer-body links small noselect" href="https://github.com/nirekshetty/me">Designed &amp; Built by Nirek Shetty<br><i class="fa fa-star-o me-2"></i><span id="github-stars">0</span><i class="fa fa-github-alt mx-3"></i><i class="fa fa-code-fork me-2"></i><span id="github-forks">0</span></a></div><a class="scroll-to-top links hidden" href="#page-top"><i class="fa fa-angle-up"></i></a>
 </footer>
 <script src="assets/JS/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -169,13 +132,6 @@
 <script src="assets/JS/pagination.js"></script>
 <script src="assets/JS/toast.js"></script>
 <script src="assets/JS/typing.js"></script>
-
-
 </body>
 
 </html>
-
-
-
-
-

@@ -56,3 +56,20 @@ $('#codeblock-icon-unsplash').click(function () {
 $('#codeblock-icon-instagram').click(function () {
 	window.location.href = "";
 });
+
+// Initialize click count
+let clickCount = 0;
+
+// Get button and click count span elements
+const likeButton = document.getElementById('likeButton');
+const clickCountSpan = document.getElementById('likeCount');
+
+// Add click event listener to the button
+likeButton.addEventListener('click', () => {
+	// Increment click count
+	clickCount++;
+	// Update the text content of the click count span
+	clickCountSpan.textContent = clickCount.toString();
+	console.log("clicked")
+
+});
