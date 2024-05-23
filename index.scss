@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #692a84;
+  background: radial-gradient(circle, #692a84 0%, #3c184c 65%);
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+
+  canvas {
+    opacity: 0;
+    outline: none;
+    transition: 1s opacity;
+
+    html.model-loaded & {
+      opacity: 1;
+    }
+  }
+}
+
+.tp-dfwv {
+  width: 350px !important;
+}
+
+.skill {
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  padding: 0.25em;
+
+  font-size: 6px;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}

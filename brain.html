@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="pdf-container">
+    <div class="pdf-controls">
+        <button id="prev-page">Previous</button>
+        <span>Page: <span id="page-num"></span> / <span id="page-count"></span></span>
+        <button id="next-page">Next</button>
+    </div>
+    <canvas id="pdf-render"></canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
