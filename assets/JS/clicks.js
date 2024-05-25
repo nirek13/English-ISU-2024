@@ -29,12 +29,12 @@ $('a[href*="#"]')
 		}
 	});
 
-$('#profile-picture').click(function () {
-	window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+/*$('#profile-picture').click(function () {
+	window.location.href = "";
 });
-
+*/
 $('#codeblock-icon-email').click(function () {
-	window.location.href = "mailto:anthony.tedja@mail.utoronto.ca";
+	window.location.href = "mailto:shettynirek@gmail.com";
 });
 
 $('#codeblock-icon-github').click(function () {
