@@ -6,14 +6,14 @@
         /* Inline styles */
         .pdf-container {
             margin: auto;
-
             border-radius: 10px;
             overflow: hidden;
+            padding: 0;
         }
 
         .pdf-controls {
             text-align: center;
-            margin-bottom: 0px;
+            margin-bottom: -20px;
         }
 
         #prev-page,
@@ -23,10 +23,18 @@
         }
 
         #pdf-render {
+            border: #0a192f00;
+            padding: 10rem;
             display: block;
             margin: auto;
             width:auto;
-            height: 90%;
+            height: 190%;
+            border-radius: 3px;
+        }
+
+        .no-wrap {
+            white-space: nowrap;
+            font-size: 1.5em; /* Adjust font size as needed */
         }
     </style>
     <script type="importmap">
@@ -119,14 +127,21 @@
     </div>
 </nav>
 <body>
-<div class="pdf-container">
+<!--<h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip no-wrap" style="text-align: center">
+    <span class="blc"></span>
+    <span class="cd-words-wrapper">
+        <strong class="is-visible"><span class="noselect">My Resume</span></strong>
+    </span>
+</h1>
+-->
+
+    <canvas id="pdf-render"></canvas>
     <div class="pdf-controls">
         <button id="prev-page">Previous</button>
         <span>Page: <span id="page-num">1</span> / <span id="page-count"></span></span>
         <button id="next-page">Next</button>
     </div>
-    <canvas id="pdf-render"></canvas>
-</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.min.js"></script>
 <script>
     const url = 'Resume.pdf'; // Ensure this file exists in the same directory
