@@ -23,10 +23,35 @@
   --hello-img-filter: invert(80%);
   --click-img-filter: invert(90%);
 }
+:root {
+  --main-bg-color: #1a1a1a;
+  --second-bg-color: #272727;
+  --heading-color: #ff6b6b;
+  --main-text-color: #f0f0f0;
+  --selection-color: #4d4d4d;
+  --scroll-color: #f76c6c;
+  --arrow-color: #70a1ff;
+  --bg-shade: soft-light;
+  --link-color: #70a1ff;
+  --logo-filter: invert(80%);
+  --logo-transform: rotate(0deg);
+  --logo-transform-hover: rotate(200deg) scale(1.2);
+  --border-color: #333333;
+  --name-hover: #f76c6c;
+  --name-shadow: #6d7989;
+  --border-outline: #ff6b6b;
+  --toast-bg: rgba(26, 26, 26, 0.95);
+  --toast-border: rgba(255, 255, 255, 0.1);
+  --toast-border2: rgba(255, 255, 255, 0.05);
+  --toast-close: invert(100%);
+  --navbar-box: rgba(255, 255, 255, 0.03);
+  --hello-img-filter: invert(80%);
+  --click-img-filter: invert(90%);
+}
 
 /* Rest of your CSS rules follow... */
 
-[nirekshetty-data-theme="light"] {
+[data-theme="light"] {
   --main-bg-color: #fff;
   --second-bg-color: #f8f9fa;
   --heading-color: black;
@@ -62,7 +87,7 @@
   --arrow-color: #00bcd4;
   --bg-shade: soft-light;
   --link-color: #00bcd4;
-  --logo-filter: invert(80%);
+  --logo-filter: invert(500%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #333333;
@@ -716,6 +741,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 .chat-container{
+  background-color: var(--main-bg-color);
+}
+.terminal-footer{
+  background-color: var(--second-bg-color);
+}
+.terminal-header{
   background-color: var(--second-bg-color);
 }
 
@@ -803,7 +834,4 @@ input[type="number"]::-webkit-outer-spin-button {
   text-decoration-color: white;
   position:relative;
 }
-
-
-
 
