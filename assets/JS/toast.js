@@ -3,7 +3,7 @@ let element = document.getElementById("toast-welcome");
 if (element) {
   const toast = new bootstrap.Toast(element);
 
-  let visitCount = parseInt(localStorage.getItem("anthonytedja-visit-count"));
+  let visitCount = parseInt(localStorage.getItem("nirekshetty-visit-count"));
 
   if (Number.isInteger(visitCount)) {
     visitCount += 1;
@@ -31,7 +31,7 @@ if (element) {
     );
   }
 
-  localStorage.setItem("anthonytedja-visit-count", visitCount);
+  localStorage.setItem("nirekshetty-visit-count", visitCount);
 
   setTimeout(() => toast.show(), 3000);
 }

@@ -1,6 +1,6 @@
 // Ajax request to fetch and render github stats
 $.ajax({
-	url: 'https://api.github.com/repos/anthonytedja/me',
+	url: 'https://api.github.com/repos/nirek13',
 	method: 'GET',
 	dataType: 'json',
 	success: function (data) {
