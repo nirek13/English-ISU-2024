@@ -307,6 +307,13 @@ section:nth-last-of-type(odd) {
   }
 }
 
+  #logo:active {
+    opacity: 0.1;
+    cursor: pointer;
+    transform: var(--logo-transform-hover) !important;
+  }
+
+
 #fullname {
   color: var(--heading-color);
   white-space: normal;
