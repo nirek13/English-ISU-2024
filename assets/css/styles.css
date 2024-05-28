@@ -842,3 +842,87 @@ input[type="number"]::-webkit-outer-spin-button {
   position:relative;
 }
 
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 70px;
+  height: 40px;
+  outline: 2px solid #fff;
+  background:
+          radial-gradient(farthest-side,#000 90%,#0000) 0 0/8px 8px no-repeat,
+          linear-gradient(#fff 0 0) 50%/10px 100% no-repeat,
+          conic-gradient(from  90deg at 10px 10px,#0000 90deg,#fff 0),
+          conic-gradient(from -90deg at 60px 30px,#0000 90deg,#fff 0);
+  animation: l2 2s infinite;
+}
+@keyframes l2 {
+  0%    {background-position:0    0   ,50%}
+  12.5% {background-position:50%  0   ,50%}
+  25%   {background-position:50%  100%,50%}
+  37.5% {background-position:100% 100%,50%}
+  50%   {background-position:100% 0   ,50%}
+  62.5% {background-position:50%  0   ,50%}
+  75%   {background-position:50%  100%,50%}
+  82.5% {background-position:0    100%,50%}
+  100%  {background-position:0    0   ,50%}
+}
+
+.loader {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+  border: 10px solid #000;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 15px #000;
+  background-color: #fff;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.loader:before {
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  transform: translateX(-50%);
+  animation: animateMaze1 4s infinite linear;
+}
+
+.loader:after {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  transform: translateY(-50%);
+  animation: animateMaze2 4s infinite linear;
+}
+
+@keyframes animateMaze1 {
+  0%, 25% {
+    transform: translateX(-50%);
+  }
+  50%, 75% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes animateMaze2 {
+  0%, 25% {
+    transform: translateY(-50%);
+  }
+  50%, 75% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
