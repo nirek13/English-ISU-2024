@@ -926,3 +926,23 @@ input[type="number"]::-webkit-outer-spin-button {
     transform: translateY(-50%);
   }
 }
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#typing-text::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
