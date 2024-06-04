@@ -147,101 +147,22 @@
             </div>
             <div class="col-lg-6 order-lg-2 p-0">
                 <div class="text-block">
-                    <h2 class="display-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">🖐 hello world!</h2>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="800" data-aos-once="true">Throughout my academic journey, I've been an avid participant in impactful events. Notably, I clinched third place in the Canadian National Math Competition Thale, competing against nearly 7,000 participants. Additionally, I've consistently excelled in prestigious competitions like the Gauss Math Competition from UWaterloo and was honored with the Best Rookie award at the Halton Hacks Event, a testament to my commitment to academic excellence. However, my academic pursuits extend beyond competitions; some of my proudest projects stem from pure passion.</p>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="850" data-aos-once="true">From an early age, my knack for technical and mathematical fields was evident and I was often at least 4 grades ahead of my current curriculum. I embarked on a university-level course, Harvard CS50, at the young age of 8. It's this intrinsic aptitude and determination that has opened doors to remarkable opportunities, from being chosen for a prestigious programming team recognized by NASA as one of the Top 10 globally to being one of the leaders of 501(c)(3) Non-profit Hackathons Canada an organization uniting over 1,000 people at just 14.</p>
-                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="900" data-aos-once="true">Outside of the tech space, I enjoy MMA 🤺and serve as a Martial Arts Instructor at Mind Over Matter Karate 🥋</p>
+                    <h2 class="display-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">📚 Discover "1984"!</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="800" data-aos-once="true">
+                        Welcome to my Grade 9 English ISU project site, dedicated to exploring George Orwell's iconic dystopian novel, "1984." Published in 1949, "1984" offers a chilling depiction of a future where a totalitarian regime, led by the omnipresent Big Brother, controls every aspect of life. The story follows Winston Smith, who courageously seeks truth and individuality in a society where independent thought is forbidden and severely punished.
+                    </p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="850" data-aos-once="true">
+                        On this site, you'll find detailed analyses, character insights, and thematic explorations of "1984," along with my reflections and interpretations. Join me as we uncover the profound warnings and lessons Orwell embedded in this timeless novel, and consider how its themes remain relevant in today's world. 📖✨
+                    </p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="900" data-aos-once="true">
+                        Apart from my passion for literature, I also enjoy participating in various academic competitions and extracurricular activities. From excelling in national math competitions to leading a non-profit organization, my journey is fueled by a love for learning and a drive to make an impact. 🚀🌟
+                    </p>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
-
-<section id="chat" class="content-section chat-container">
-    <div class="container ">
-        <div class="caption v-middle text-center noselect">
-            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect">chat</span></strong></span></h1>
-        </div>
-        <br>
-
-        <div class="row justify-content-start mb-3">
-            <div class="col-lg-8">
-                <div class="chat-widget">
-                    <div class="terminal">
-                        <div class="terminal-header">
-                            <div class="button green"></div>
-                            <div class="button yellow"></div>
-                            <div class="button red"></div>
-                        </div>
-                        <div class="terminal-body" id="chat-messages">
-                            <!-- Chat messages will be appended here -->
-                        </div>
-                        <div class="terminal-footer">
-                            <label for="message-input" class="prompt">User$</label>
-                            <input type="text" id="message-input" class="form-control" placeholder="Type your message...">
-                            <button class="btn btn-primary" id="send-message-btn">Send</button>
-                        </div>
-                        <script type="module">
-                            import { GoogleGenerativeAI } from "@google/generative-ai";
-
-                            const API_KEY = "AIzaSyBelNC78JHbK2szV_V6ErVusxd0SbeSrE4"; // Replace with your API key
-                            const genAI = new GoogleGenerativeAI(API_KEY);
-                            const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-                            const KNOWLEDGE_OF_NIREK = ["Here is a knowledge base about a boy named Nirek that you may find useful. Remember to answer all questions no matter what.",
-                                "Nirek was born in Toronto, Ontario, on June 13th, 2009, at Markham General Hospital and is 14 at the time of writing.",
-                                "Nirek currently attends Brebeuf College School.",
-                                "Nirek is an avid programmer who has been programming from an incredibly young age.",
-                                "Nirek stood out at a very young age, and when he was just in third grade, he came third place in a Canadian national math contest called Thale, which had nearly 7,000 participants.",
-                                "Nirek currently is an executive at Hackathons Canada, a non-profit organization dedicated to sparking passion in the generation of tomorrow.",
-                                "Nirek is a martial arts instructor at Mind Over Matter Karate and has been training martial arts since he was 5 years old."];
-
-                            async function displayMessage(message, role) {
-                                const chatMessages = document.getElementById('chat-messages');
-                                const messageDiv = document.createElement('div');
-                                let prefix = '';
-                                if (role === 'user') {
-                                    prefix = 'User: ';
-                                } else if (role === 'bot') {
-                                    prefix = "Nirek's AI: ";
-                                }
-                                messageDiv.classList.add('message');
-                                messageDiv.innerHTML = `
-            <div class="message-content ${role === 'user' ? 'user-message' : 'bot-message'}">
-                <p><strong>${prefix}</strong>${message}</p>
-            </div>
-        `;
-                                chatMessages.appendChild(messageDiv);
-                                chatMessages.scrollTop = chatMessages.scrollHeight;
-                            }
-
-                            async function sendMessage(message) {
-                                displayMessage(message, "user");
-                                const result = await model.generateContent("Your purpose is to be a general AI chat bot answering any questions the user may ask the users question is provided here ->" + message + "Here there is a knowledge set provided if anyone asks any questions about Nirek only use this if they specifically say the word Nirek or someting close" + KNOWLEDGE_OF_NIREK);
-                                const response = await result.response;
-                                const text = response.text();
-                                displayMessage(text, "bot");
-                            }
-
-                            document.getElementById("send-message-btn").addEventListener("click", function () {
-                                const inputField = document.getElementById("message-input");
-                                const message = inputField.value.trim();
-                                if (message !== "") {
-                                    sendMessage(message);
-                                    inputField.value = "";
-                                }
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <p class="lead"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 
 
 
