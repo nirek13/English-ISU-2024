@@ -320,9 +320,9 @@ section:nth-last-of-type(odd) {
   perspective: 50px;
   transition: all ease 0.5s;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 7.5rem;
   text-align: left;
-  font-family: "Waseem", cursive;
+  font-family: "Lato", cursive;
   font-weight: 400;
   font-style: normal;
 
@@ -772,17 +772,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Additional CSS rules for specific themes */
 [data-theme="theme1"] {
-  --logo-filter: invert(80%); /* Adjust the filter effect for theme1 */
+  --logo-filter: invert(0%); /* Adjust the filter effect for theme1 */
   --logo-color: #ff6b6b; /* Set the logo color for theme1 */
 }
 
 [data-theme="theme2"] {
-  --logo-filter: invert(20%); /* Adjust the filter effect for theme2 */
+  --logo-filter: invert(0%); /* Adjust the filter effect for theme2 */
   --logo-color: #ff9800; /* Set the logo color for theme2 */
 }
 
 [data-theme="theme3"] {
-  --logo-filter: invert(90%); /* Adjust the filter effect for theme3 */
+  --logo-filter: invert(0%); /* Adjust the filter effect for theme3 */
   --logo-color: #f50057; /* Set the logo color for theme3 */
 }
 /* Your existing CSS rules */
@@ -945,4 +945,28 @@ input[type="number"]::-webkit-outer-spin-button {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+#frontpage {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: url("../../assets/img/blank.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  animation: fadeInBlurBackground 1.5s ease-out forwards;
+}
+
+@keyframes fadeInBlurBackground {
+  from {
+    filter: blur(10px);
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -9,8 +9,8 @@ const {
     HarmBlockThreshold,
 } = require("@google/generative-ai");
 
-const MODEL_NAME = "gemini-1.0-pro";
-const API_KEY = "AIzaSyBelNC78JHbK2szV_V6ErVusxd0SbeSrE4";
+const MODEL_NAME = "gemini-1.5-flash";
+const API_KEY = "AIzaSyCJdO0htiBNMkAFQOEsg2PCEypb46KhEFA";
 
 function displayMessage(message, role) {
     // Select the chat-messages element
