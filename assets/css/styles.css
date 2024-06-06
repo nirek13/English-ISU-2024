@@ -8,7 +8,7 @@
   --arrow-color: #e0e0e0;
   --bg-shade: soft-light;
   --link-color: #e0e0e0;
-  --logo-filter: invert(80%);
+  --logo-filter: invert(0%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #1a1a26;
@@ -18,7 +18,7 @@
   --toast-bg: rgba(15, 15, 23, 0.95);
   --toast-border: rgba(255, 255, 255, 0.1);
   --toast-border2: rgba(255, 255, 255, 0.05);
-  --toast-close: invert(100%);
+  --toast-close: invert(10%);
   --navbar-box: rgba(255, 255, 255, 0.03);
   --hello-img-filter: invert(80%);
   --click-img-filter: invert(90%);
@@ -33,7 +33,7 @@
   --arrow-color: #70a1ff;
   --bg-shade: soft-light;
   --link-color: #70a1ff;
-  --logo-filter: invert(80%);
+  --logo-filter: invert(0%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #333333;
@@ -61,7 +61,7 @@
   --arrow-color: #212529;
   --bg-shade: normal;
   --link-color: #212529;
-  --logo-filter: invert(12%);
+  --logo-filter: invert(2%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(-20deg) scale(1.2);
   --border-color: #dee2e6;
@@ -87,7 +87,7 @@
   --arrow-color: #00bcd4;
   --bg-shade: soft-light;
   --link-color: #00bcd4;
-  --logo-filter: invert(500%);
+  --logo-filter: invert(00%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #333333;
@@ -114,7 +114,7 @@
   --arrow-color: #e0e0e0;
   --bg-shade: soft-light;
   --link-color: #e0e0e0;
-  --logo-filter: invert(80%);
+  --logo-filter: invert(00%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #1a1a26;
@@ -141,7 +141,7 @@
   --arrow-color: #64ffda;
   --bg-shade: soft-light;
   --link-color: #64ffda;
-  --logo-filter: invert(80%);
+  --logo-filter: invert(00%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #393e46;
@@ -168,7 +168,7 @@
   --arrow-color: #ff3838;
   --bg-shade: soft-light;
   --link-color: #ff3838;
-  --logo-filter: invert(80%);
+  --logo-filter: invert(0%);
   --logo-transform: rotate(0deg);
   --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #172a45;
