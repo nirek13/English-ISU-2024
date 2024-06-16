@@ -91,6 +91,36 @@
         </div>
     </div>
 </nav>
+<h1>Display 5 Different PNG Images</h1>
+<div class="image-container" id="imageContainer">
+    <!-- Images will be displayed here -->
+</div>
+<script>
+    // Array of image sources
+    const imageSources = [
+        'image1.png',
+        'image2.png',
+        'image3.png',
+        'image4.png',
+        'image5.png'
+    ];
+
+    // Get the image container div
+    const imageContainer = document.getElementById('imageContainer');
+
+    // Function to create and append image elements
+    function displayImages() {
+        imageSources.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = 'Image';
+            imageContainer.appendChild(img);
+        });
+    }
+
+    // Call the function to display images
+    displayImages();
+</script>
 <footer>
     <div class="container p-2 p-sm-3 p-lg-4"><a class="footer-body links small noselect" href="https://github.com/nirek13/me">Designed &amp; Built by Nirek Shetty<br><i class="fa fa-star-o me-2"></i><span id="github-stars">0</span><i class="fa fa-github-alt mx-3"></i><i class="fa fa-code-fork me-2"></i><span id="github-forks">0</span></a></div><a class="scroll-to-top links hidden" href="#page-top"><i class="fa fa-angle-up"></i></a>
 </footer>
